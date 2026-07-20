@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- ============ PROPERTIES (placeholder names — rename to your real ones) ============ -->
+    <record id="demo_property_1" model="goliath.property">
+        <field name="name">Property One</field>
+        <field name="address">123 Example St, Las Vegas, NV</field>
+    </record>
+    <record id="demo_property_2" model="goliath.property">
+        <field name="name">Property Two</field>
+        <field name="address">456 Sample Ave, Henderson, NV</field>
+    </record>
+    <record id="demo_property_3" model="goliath.property">
+        <field name="name">Property Three</field>
+        <field name="address">789 Placeholder Blvd, Las Vegas, NV</field>
+    </record>
+
+    <!-- ============ SUPPLIES — Property One (a couple low) ============ -->
+    <record id="demo_s1_tp" model="goliath.supply.item">
+        <field name="property_id" ref="demo_property_1"/>
+        <field name="name">Toilet Paper</field>
+        <field name="quantity">3</field><field name="unit">rolls</field><field name="reorder_point">6</field>
+    </record>
+    <record id="demo_s1_pt" model="goliath.supply.item">
+        <field name="property_id" ref="demo_property_1"/>
+        <field name="name">Paper Towels</field>
+        <field name="quantity">8</field><field name="unit">rolls</field><field name="reorder_point">4</field>
+    </record>
+    <record id="demo_s1_ds" model="goliath.supply.item">
+        <field name="property_id" ref="demo_property_1"/>
+        <field name="name">Dish Soap</field>
+        <field name="quantity">1</field><field name="unit">bottles</field><field name="reorder_point">2</field>
+    </record>
+    <record id="demo_s1_tb" model="goliath.supply.item">
+        <field name="property_id" ref="demo_property_1"/>
+        <field name="name">Trash Bags</field>
+        <field name="quantity">40</field><field name="unit">bags</field><field name="reorder_point">15</field>
+    </record>
+    <record id="demo_s1_cp" model="goliath.supply.item">
+        <field name="property_id" ref="demo_property_1"/>
+        <field name="name">Coffee Pods</field>
+        <field name="quantity">12</field><field name="unit">pods</field><field name="reorder_point">10</field>
+    </record>
+
+    <!-- ============ SUPPLIES — Property Two ============ -->
+    <record id="demo_s2_tp" model="goliath.supply.item">
+        <field name="property_id" ref="demo_property_2"/>
+        <field name="name">Toilet Paper</field>
+        <field name="quantity">9</field><field name="unit">rolls</field><field name="reorder_point">6</field>
+    </record>
+    <record id="demo_s2_hs" model="goliath.supply.item">
+        <field name="property_id" ref="demo_property_2"/>
+        <field name="name">Hand Soap</field>
+        <field name="quantity">2</field><field name="unit">bottles</field><field name="reorder_point">3</field>
+    </record>
+    <record id="demo_s2_ld" model="goliath.supply.item">
+        <field name="property_id" ref="demo_property_2"/>
+        <field name="name">Laundry Detergent</field>
+        <field name="quantity">1</field><field name="unit">bottles</field><field name="reorder_point">1</field>
+    </record>
+    <record id="demo_s2_dp" model="goliath.supply.item">
+        <field name="property_id" ref="demo_property_2"/>
+        <field name="name">Dishwasher Pods</field>
+        <field name="quantity">20</field><field name="unit">pods</field><field name="reorder_point">12</field>
+    </record>
+
+    <!-- ============ SUPPLIES — Property Three ============ -->
+    <record id="demo_s3_sh" model="goliath.supply.item">
+        <field name="property_id" ref="demo_property_3"/>
+        <field name="name">Shampoo &amp; Conditioner</field>
+        <field name="quantity">4</field><field name="unit">bottles</field><field name="reorder_point">4</field>
+    </record>
+    <record id="demo_s3_np" model="goliath.supply.item">
+        <field name="property_id" ref="demo_property_3"/>
+        <field name="name">Paper Napkins</field>
+        <field name="quantity">2</field><field name="unit">packs</field><field name="reorder_point">5</field>
+    </record>
+    <record id="demo_s3_tp" model="goliath.supply.item">
+        <field name="property_id" ref="demo_property_3"/>
+        <field name="name">Toilet Paper</field>
+        <field name="quantity">18</field><field name="unit">rolls</field><field name="reorder_point">6</field>
+    </record>
+
+    <!-- ============ CHOCOLATE PRODUCTS (placeholder — rename to your real lines) ============ -->
+    <record id="demo_choc_1" model="goliath.chocolate">
+        <field name="name">Dark Chocolate Bar</field><field name="sku">CHOC-DARK-70</field>
+        <field name="quantity">120</field><field name="unit">bars</field><field name="reorder_point">50</field>
+    </record>
+    <record id="demo_choc_2" model="goliath.chocolate">
+        <field name="name">Milk Chocolate Bar</field><field name="sku">CHOC-MILK-40</field>
+        <field name="quantity">30</field><field name="unit">bars</field><field name="reorder_point">50</field>
+    </record>
+    <record id="demo_choc_3" model="goliath.chocolate">
+        <field name="name">Sea Salt Caramel Bar</field><field name="sku">CHOC-CARM-SS</field>
+        <field name="quantity">8</field><field name="unit">bars</field><field name="reorder_point">25</field>
+    </record>
+    <record id="demo_choc_4" model="goliath.chocolate">
+        <field name="name">Hazelnut Bar</field><field name="sku">CHOC-HAZL</field>
+        <field name="quantity">75</field><field name="unit">bars</field><field name="reorder_point">40</field>
+    </record>
+</odoo>

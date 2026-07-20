@@ -15,6 +15,9 @@
         'views/reorder_views.xml',
         'views/menus.xml',
     ],
+    'demo': [
+        'demo/demo_data.xml',
+    ],
     'application': True,
     'installable': True,
 }
