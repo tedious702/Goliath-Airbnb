@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_goliath_root" name="Goliath Stock" sequence="15"/>
+
+    <!-- Reorder overview first, so it's front and center -->
+    <menuitem id="menu_reorder" name="Needs Reordering"
+              parent="menu_goliath_root" sequence="5"/>
+    <menuitem id="menu_reorder_supplies" name="Supplies to Reorder"
+              parent="menu_reorder" action="action_reorder_supplies" sequence="10"/>
+    <menuitem id="menu_reorder_chocolate" name="Chocolate to Reorder"
+              parent="menu_reorder" action="action_reorder_chocolate" sequence="20"/>
+
+    <!-- Airbnb section -->
+    <menuitem id="menu_airbnb" name="Airbnb Supplies"
+              parent="menu_goliath_root" sequence="10"/>
+    <menuitem id="menu_airbnb_properties" name="Properties"
+              parent="menu_airbnb" action="action_goliath_property" sequence="10"/>
+    <menuitem id="menu_airbnb_supplies" name="All Supplies"
+              parent="menu_airbnb" action="action_goliath_supply" sequence="20"/>
+
+    <!-- Chocolate section -->
+    <menuitem id="menu_chocolate" name="Chocolate Stock"
+              parent="menu_goliath_root" sequence="20"/>
+    <menuitem id="menu_chocolate_products" name="Products"
+              parent="menu_chocolate" action="action_goliath_chocolate" sequence="10"/>
+</odoo>
